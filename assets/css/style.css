@@ -415,6 +415,11 @@ span {
 }
 
 .p-news__inner {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.p-news__wrapper {
 	background: #fff;
 	border-radius: 20px;
 	box-shadow: 0px 9px 30px 0px #f4f4f4;
@@ -1337,6 +1342,14 @@ span {
 	width: 200px;
 }
 
+.p-news__wrapper {
+	border-radius: 30px;
+	padding-bottom: 34px;
+	padding-left: 9.2105263158%;
+	padding-right: 9.2105263158%;
+	padding-top: 40px;
+}
+
 .p-news__heading {
 	text-align: left;
 }
@@ -1612,7 +1625,8 @@ span {
 @media screen and (min-width: 1200px) {
 
 .p-news__inner {
-	padding: 40px 105px;
+	max-width: 1200px;
+	padding-inline: 40px;
 }
 
 }
