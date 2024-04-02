@@ -1680,6 +1680,10 @@ span {
 	width: 56.5217391304%;
 }
 
+.p-servise__content-text {
+	display: none;
+}
+
 }
 
 @media screen and (min-width: 1200px) {
@@ -1687,10 +1691,6 @@ span {
 .p-news__inner {
 	max-width: 1200px;
 	padding-inline: 40px;
-}
-
-.p-servise__content-text {
-	display: none;
 }
 
 }
