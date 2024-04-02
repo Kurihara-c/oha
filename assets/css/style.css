@@ -1240,6 +1240,53 @@ span {
 	visibility: visible;
 }
 
+.p-about-modal {
+	background: #fff;
+	border: none;
+	border-radius: 20px;
+	inset: 0;
+	margin: auto;
+	max-height: calc(100% - 40px);
+	max-width: calc(100% - 30px);
+	overflow: auto;
+	padding: 16px 15px 64px;
+	position: fixed;
+	z-index: 60;
+}
+
+.p-about-modal::backdrop {
+	background: #000;
+	opacity: 0.2;
+}
+
+.p-about-modal__head {
+	display: flex;
+	justify-content: flex-end;
+	position: sticky;
+	top: 0;
+}
+
+.p-about-modal__button img {
+	width: 37px;
+}
+
+.p-about-modal__body {
+	margin-top: 12px;
+}
+
+.p-about-modal__body p {
+	font-size: 0.875rem;
+}
+
+.p-about-modal__body p:nth-child(n+2) {
+	margin-top: 20px;
+}
+
+.p-about-modal__bottom-button {
+	margin-top: 30px;
+	text-align: center;
+}
+
 .u-fade-in-up {
 	opacity: 0;
 	transform: translateY(24px);
@@ -1565,6 +1612,15 @@ span {
 	bottom: 30px;
 	right: 16px;
 	width: 76px;
+}
+
+.p-about-modal {
+	padding: 49px 70px 75px;
+	width: 1140px;
+}
+
+.p-about-modal__body p {
+	font-size: 1rem;
 }
 
 .u-hidden-pc {
