@@ -102,6 +102,13 @@ body {
 	-webkit-overflow-scrolling: touch;
 }
 
+/* 読み込み時フェードイン */
+
+body {
+	animation: fadein 1.5s ease 0s 1 normal;
+	-webkit-animation: fadein 1.5s ease 0s 1 normal;
+}
+
 img {
 	height: auto;
 	max-width: 100%;
@@ -341,7 +348,7 @@ span {
 	border-radius: 5px;
 	display: block;
 	font-feature-settings: "palt" on;
-	font-size: 22px;
+	font-size: 1.375rem;
 	font-weight: 700;
 	letter-spacing: 2.2px;
 	line-height: 1;
@@ -392,7 +399,7 @@ span {
 }
 
 .p-case__heading {
-	font-size: 18px;
+	font-size: 1.125rem;
 	font-weight: 700;
 	letter-spacing: 1.8px;
 	line-height: 1;
@@ -466,7 +473,7 @@ span {
 .p-news__card-label {
 	border-radius: 2px;
 	color: #fff;
-	font-size: 11px;
+	font-size: 0.6875rem;
 	font-weight: 700;
 	line-height: 1.7;
 	min-width: 63px;
@@ -648,7 +655,7 @@ span {
 }
 
 .p-how-card__head-step {
-	font-size: 13px;
+	font-size: 0.8125rem;
 	font-weight: 700;
 	letter-spacing: 1.3px;
 	line-height: 1;
@@ -656,7 +663,7 @@ span {
 
 .p-how-card__head-number {
 	color: #fff;
-	font-size: 34px;
+	font-size: 2.125rem;
 	font-weight: 700;
 	letter-spacing: 3.4px;
 	line-height: 1;
@@ -1348,14 +1355,14 @@ span {
 }
 
 .p-mv__lead-text {
-	font-size: 38px;
+	font-size: 2.375rem;
 	letter-spacing: 3.8px;
 	margin-left: 0;
 	margin-right: 0;
 }
 
 .p-mv__discription {
-	font-size: 18px;
+	font-size: 1.125rem;
 	letter-spacing: 0.54px;
 	text-align: left;
 }
@@ -1683,6 +1690,20 @@ span {
 .p-news__inner {
 	max-width: 1200px;
 	padding-inline: 40px;
+}
+
+}
+
+@keyframes fadein {
+
+from {
+	opacity: 0;
+	transform: translateY(10px);
+}
+
+to {
+	opacity: 1;
+	transform: translateY(0);
 }
 
 }
