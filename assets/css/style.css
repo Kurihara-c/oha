@@ -1546,10 +1546,6 @@ span {
 	letter-spacing: 2px;
 }
 
-.p-servise__content-text {
-	display: none;
-}
-
 .p-qa__boxes {
 	max-width: 800px;
 }
@@ -1691,6 +1687,10 @@ span {
 .p-news__inner {
 	max-width: 1200px;
 	padding-inline: 40px;
+}
+
+.p-servise__content-text {
+	display: none;
 }
 
 }
