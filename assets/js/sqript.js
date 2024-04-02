@@ -13,6 +13,19 @@ jQuery('#js-drawer-content a[href^="#"]').on("click", function (e) {
   jQuery("#js-drawer-content").removeClass("is-checked");
 });
 
+// Aboutモーダル
+jQuery(".js-modal-open").on("click", function (e) {
+  e.preventDefault();
+
+  jQuery("#js-about-modal")[0].showModal();
+});
+
+jQuery(".js-modal-close").on("click", function (e) {
+  e.preventDefault();
+
+  jQuery("#js-about-modal")[0].close();
+});
+
 // ギャラリーswiper
 const swiper = new Swiper("#js-gallery-swiper", {
   spaceBetween: 70,
